@@ -21,9 +21,12 @@ public class CharaController : MonoBehaviour
     float rotationSpeed = 1.0f;
     float camRotationSpeed = 1.5f;
 
+    Animator myAnim;
     // Start is called before the first frame update
     void Start()
     {
+        myAnim = GetComponentInChildren<Animator>();
+
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
     }
@@ -46,6 +49,8 @@ public class CharaController : MonoBehaviour
             maxSpeed = normalSpeed;
         }
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
+
+        myAnim.SetFloat("Speed", newVelocity.magnitude);
 
         //transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical") * maxSpeed); Now this line of code is obsolete because of the two line of code below Beginnibg with vector3 And Rigidbody
         
