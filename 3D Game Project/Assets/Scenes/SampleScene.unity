@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.38817838, g: 0.40203515, b: 0.39075404, a: 1}
+  m_IndirectSpecularColor: {r: 0.38817835, g: 0.40203488, b: 0.39075366, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -303,7 +303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &597751126 stripped
 GameObject:
@@ -475,7 +475,7 @@ Transform:
   - {fileID: 1271575729}
   - {fileID: 1519463083}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -767,7 +767,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 315e750e61b14864fab31c687214c26e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 315e750e61b14864fab31c687214c26e, type: 3}
       propertyPath: m_LocalScale.x
@@ -879,7 +879,7 @@ Transform:
   - {fileID: 1080575209}
   - {fileID: 597751127}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1552221582
 Rigidbody:
@@ -912,68 +912,12 @@ MonoBehaviour:
   maxSpeed: 0.5
   normalSpeed: 10
   sprintSpeed: 30
+  camRotation: 0
   groundChecker: {fileID: 1080575208}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   jumpForce: 300
---- !u!1001 &1629117988
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -14.130723
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.024000168
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.26095963
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
-      propertyPath: m_Name
-      value: House For 3D Project Game
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 268d4c6f6c82da347a1c5902d6d4a9e5, type: 3}
 --- !u!1 &1952840713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1011,7 @@ Transform:
   m_LocalScale: {x: 39.45319, y: 1, z: 40.11612}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118421334
 GameObject:
@@ -1163,5 +1107,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
