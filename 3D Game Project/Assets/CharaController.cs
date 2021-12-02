@@ -9,7 +9,7 @@ public class CharaController : MonoBehaviour
     public float sprintSpeed = 20.0f;
 
     float rotation = 0.0f;
-    float camRotation = 0.0f;
+    public float camRotation = 0.0f;
     GameObject cam;
     Rigidbody myRigidbody;
 
