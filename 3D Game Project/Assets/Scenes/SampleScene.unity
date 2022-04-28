@@ -7364,7 +7364,7 @@ GameObject:
   - component: {fileID: 1895780871}
   - component: {fileID: 1895780870}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7380,7 +7380,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -7391,11 +7391,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895780869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d28764e9e8b95a42b28fa4a8025ba1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChatBackground: {fileID: 0}
+  NPCCharacter: {fileID: 0}
+  Name: 
+  sentences:
+  - 
+  - 
+  - 
 --- !u!136 &1895780872
 CapsuleCollider:
   m_ObjectHideFlags: 0

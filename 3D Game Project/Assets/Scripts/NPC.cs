@@ -24,6 +24,28 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CHATbACKGROUND.POSITION = Camera.main.worldToscreenshot    
+        //ChatBackground.Position = Camera.main.WorldToscreenPoint(NPCCharacter.position + Vector3.up * 7f);
+        Vector3 Pos = Camera.main.WorldToscreenPoint(NPCCharacter.position);
+        Pos.y += 175;
+        ChatBackground.position = Pos;
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        this.gameObject.getComponent<NPC>().enabled = true;
+        FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
+        if ((other.gameObject.tag == "Player") && Input.GetKeyDown(KeyCode.F))
+        {
+            this.gameObject.getComponent<NPC>().enabled = true;
+            dialogueSystem.Names = Name;
+            dialogueSystem.dialogueLines = sentences;
+            FindObjectOfType<DialogueSystem>().NPCName();
+        }
+    }
+
+    public void OnTriggerExit()
+    {
+        FindObjectOfType<DialogueSystem>().OutOfRange();
+        this.gameObject.getComponent<NPC>().enabled = false;
     }
 }
