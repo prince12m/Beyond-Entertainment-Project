@@ -92,13 +92,13 @@ public class DialogueSystem : MonoBehaviour
 
             while (true)
             {
-                if (Input.GetKeyDOwn(DialogueInput) && DialogueEnded == false)
+                if (Input.GetKeyDown(DialogueInput) && DialogueEnded == false)
                 {
                     break;
                 }
-                yield return 0:
+                yield return 0;
             }
-            dialogueEnded = false;
+            DialogueEnded = false;
             dialogueActive = false;
             DropDialogue();
         }
