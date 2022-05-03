@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -36,7 +36,7 @@ public class DialogueSystem: MonoBehaviour {
         dialogueActive = false;
         StopAllCoroutines();
         dialogueGUI.SetActive(false);
-        dialogueBoxGUI.gameObject.SetActive(false);*/
+        dialogueBoxGUI.gameObject.SetActive(false);
     }
 
     void Update()
@@ -175,7 +175,7 @@ public class DialogueSystem: MonoBehaviour {
 }
 
 
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
